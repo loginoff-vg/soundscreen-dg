@@ -1,6 +1,6 @@
 ﻿DG.then(function () {
-	DG.plugin('../dist/DGSoundScreen.css');
-	return DG.plugin('../dist/DGSoundScreen.js');
+	DG.plugin('https://loginoff-vg.github.io/soundscreen-dg/dist/DGSoundScreen.css');
+	return DG.plugin('https://loginoff-vg.github.io/soundscreen-dg/dist/DGSoundscreen.js');
 })
 .then(function () {
 	try{ 
@@ -24,5 +24,4 @@
 	}catch(err){
 		console.error(err)
 	}
-
 });
