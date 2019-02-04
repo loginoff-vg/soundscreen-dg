@@ -6,20 +6,25 @@
 речевой  и текстовый вывод, звуковое оформление.
 
 ### Подключение
-
+// Сначала 2gisAPI
 <script type="text/javascript" src="https://maps.api.2gis.ru/2.0/loader.js"></script>
+
 <script>
 DG.then(function () {
+	// Подключаем файлы плагина
 	DG.plugin('https://loginoff-vg.github.io/soundscreen-dg/dist/DGSoundScreen.css');
 	return DG.plugin('https://loginoff-vg.github.io/soundscreen-dg/dist/DGSoundscreen.js');
 })
 .then(function () {
+	// Инициализация карты
 	map = new DG.Map('map', {
 		center: [54.980206086231,82.898068362003],
 		zoom: 16,
+		// Включаем soundscreen в опциях карты
 		soundscreen: {
 			debug: true,
 			audio: {
+			// sourceFile - файл со звуками, кодированными в base64
 				sourceFile: 'DGSoundscreenAudioLibrary.json'
 			}
 		}
