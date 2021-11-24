@@ -62,7 +62,7 @@ DG.Soundscreen.keyboard = DG.Soundscreen.UI.extend({
 		label.innerHTML = 'Soundscreen:';
 		this._input = DG.DomUtil.create('input', 'soundscreen-ui-keyboardinput', this._container);
 		this._input.setAttribute('readonly', true);
-		this._input.value='◉◉'; // Fisheye &#9673;
+		this._input.value='..'; //
 		DG.DomEvent.on(this._container, 'click', this._prevent)
 	},
 	_beforeRemove: function() {
